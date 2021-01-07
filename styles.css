@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ 
+
+
+/* Header and Nav Bar */
+header{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+.logo {
+    height: 30px;
+    width: auto;
+    grid-column: 2/4;
+    margin-top: 30px;
+}
+
+nav {
+    grid-column: 6 / 13;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    width: 14%;
+    margin-left: 2%;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Balthazar", 'Times New Roman', Times, serif;
+    color: black;
+    text-transform: uppercase;
+    justify-content: space-between;
+    font-size: 1.1em;
+
+}
+
+
+/* Body */
+
+body{
+    background-image: url(IMG-Files/Background/jon-tyson-vfOAzd-ByRM-unsplash3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 730px;
+    width: 1400px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    font-family: "Cormorant Garamond", times;
+    grid-area: 2 / 1 / 3 /6;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.A, .L {
+    color: red;
+}
+
+
+
+
+.clients {
+    display: flex;
+    grid-row: 6/ 7;
+    grid-column: 1/9;
+    justify-content: space-around;
+
+}
+
+.our-clients {
+    height: 30px;
+}
+
+#the-ago {
+    border-radius: 40%
+}
+
+#chicago {
+    border-radius: 40%
+}
