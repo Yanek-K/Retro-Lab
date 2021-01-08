@@ -20,20 +20,23 @@ header{
     height: 30px;
     width: auto;
     grid-column: 2/4;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 nav {
     grid-column: 6 / 13;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     text-decoration: none;
+  
 }
 
 nav li {
     display: inline-block;
     width: 14%;
     margin-left: 2%;
+    border-bottom: 1px solid black;
+  
     
 }
 
@@ -41,10 +44,7 @@ li a:hover {
     color: red;
 }
 
-/* 
-a.activepage {
-    color: red;
-} */
+
 
 nav a {
     text-decoration: none;
@@ -71,7 +71,7 @@ nav a {
 .welcome-page{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 h1 {
@@ -79,14 +79,12 @@ h1 {
     text-align: center;
     font-family: "Cormorant Garamond", times;
     grid-area: 2 / 1 / 3 /6;
-    margin-top: 20px;
     width: 100%;
     line-height: 1.6em;
     letter-spacing: 0.2em;
 }
 
 .A, .L {
-    color: red;
     font-size: 1.2em;
   
 }
@@ -99,17 +97,17 @@ h1 {
 
 .clients {
     display: flex;
-    grid-row: 5/ 6;
-    grid-column: 1/9;
+    grid-row: 5;
+    grid-column: 1/ 9;
     justify-content: space-around;
     width: 100%;
+    margin-top: 25px;
 
 }
 
 .our-clients {
     height: 30px;
     margin-bottom: 10px;
-    margin-top: -3%;
 }
 
 #the-ago {
@@ -128,63 +126,267 @@ h1 {
     height: 700px;
 }
 
-/*
-
-.print-styles {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+.style-line {
+    background-color: black;
+    height: 2300px;
+    width: 10px;
+    margin-left: 20px;
+    position: absolute
 }
 
-*/
+/* Silver-Gelatin Prints */
 
 .silver-gelatin{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     position: relative;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .image-top {
     grid-column: 4 / 7;
     grid-row: 1;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: -60px;
 }
 
 .silver-prints{
-    height: 200px;
-    width: auto;
+    height: 350px;
+    width: 270px;
     display: block;
     position: absolute;
 }
 
 .image-bottom {
-    height: 320px;
-    width: 320px;
+    height: 350px;
+    width: 260px;
     background-color: #D0D0D0;
     grid-column: 2 / 5;
     grid-row: 1;
+    margin-left: 50px;
 }
 
 
 .silver-details{
     display: grid;
-    grid-column: 7 / 11;
+    grid-column: 7 / 12;
     margin-top: 50px;
 }
 
 
 .silver-text {
-    display: inline;
+    display: inline-block;
     align-self: center;
     text-align: center;
     font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    letter-spacing: 0.05em;
 }
+
 
 .silver-info {
     height: 30px;
     width: 50%;
     justify-self: center;
     border-radius: 10%;
+    color: red;
 }
+
+
+/* Silver-Selenium Prints */
+
+.silver-selenium{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    margin-top: 250px;
+}
+
+.image-top-2 {
+    grid-column:  8 / 10;
+    grid-row: 1;
+    z-index: 1;
+    margin-top: 40px;
+    margin-left: 60px;
+
+}
+
+.selenium-prints{
+    height: 350px;
+    width: 270px;
+    width: auto;
+    display: block;
+    position: absolute;
+}
+
+.image-bottom-2 {
+    height: 350px;
+    width: 260px;
+    background-color: #AAA8A8;
+    grid-column: 9 / 12;
+    grid-row: 1;
+    margin-left: 50px;
+}
+
+
+.selenium-details{
+    display: grid;
+    grid-column: 3 / 6;
+    margin-top: 50px;
+}
+
+
+.selenium-text {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    letter-spacing: 0.05em;
+}
+
+.selenium-info {
+    height: 30px;
+    width: 70%;
+    justify-self: center;
+    border-radius: 10%;
+    color: red;
+}
+
+
+
+/* Platinum-Palladium  */
+
+.platinum-palladium{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    margin-top: 250px;
+}
+
+.image-top-3 {
+    grid-column: 4 / 7;
+    grid-row: 1;
+    z-index: 1;
+    margin-top: 50px;
+    margin-left: -60px;
+}
+
+.platinum-prints{
+    height: 350px;
+    width: 270px;
+    width: auto;
+    display: block;
+    position: absolute;
+}
+
+.image-bottom-3 {
+    height: 350px;
+    width: 260px;
+    background-color:  #D0D0D0;
+    grid-column: 2 / 5;
+    grid-row: 1;
+    margin-left: 50px;
+
+}
+
+
+.platinum-details{
+    display: grid;
+    grid-column: 8 / 11;
+    margin-top: 50px;
+}
+
+
+.platinum-text {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    letter-spacing: 0.05em;
+}
+
+.platinum-info {
+    height: 30px;
+    width: 70%;
+    justify-self: center;
+    border-radius: 10%;
+    color: red;
+}
+
+
+/* Cyanotype-Gum */
+
+.cyanotype{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 280px;
+}
+
+.image-top-4 {
+    grid-column:  8 / 10;
+    grid-row: 1;
+    z-index: 1;
+    margin-top: 50px;
+    margin-right: 0px;
+
+}
+
+.cyanotype-prints{
+    height: 300px;
+    width: 270px;
+    width: auto;
+    display: block;
+    position: absolute;
+}
+
+.image-bottom-4 {
+    width: 380px;
+    height: 260px;
+    background-color: #AAA8A8;
+    grid-column: 9 / 12;
+    grid-row: 1;
+    margin-left: 0px;
+}
+
+
+.cyanotype-details{
+    display: grid;
+    grid-column: 3 / 6;
+    margin-top: 50px;
+}
+
+
+.cyanotype-text {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 5px;
+    letter-spacing: 0.05em;
+}
+
+.cyanotype-info {
+    height: 30px;
+    width: 70%;
+    justify-self: center;
+    border-radius: 10%;
+    color: red;
+}
+
