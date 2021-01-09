@@ -8,7 +8,8 @@
 }
  
 
-/* Header and Nav Bar */
+/* GLOBAL - Header + Nav Bar */
+
 header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -56,7 +57,7 @@ nav a {
 
 
 
-/* HOME */
+/* PAGE - HOME */
 
 .home{
     background-image: url(IMG-Files/Background/jon-tyson-vfOAzd-ByRM-unsplash3.jpg);
@@ -98,8 +99,8 @@ h1 {
     grid-column: 1/ 9;
     justify-content: space-around;
     width: 100%;
-    margin-top: 28px;
-    border-bottom: 1px solid black;
+    margin-top: 29px;
+    border-bottom: 0.3px solid black;
     
 
 }
@@ -119,7 +120,7 @@ h1 {
 }
 
 
-/* SERVICES */ 
+/* PAGE - SERVICES */ 
 
 .print-styles {
     width: 100%;
@@ -422,6 +423,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+    margin-left: 10px;
 }
 
 
@@ -454,10 +456,84 @@ footer {
     display: inline-block;
     grid-column: 9 / 10;
     color: white;
+    margin-left: -20px;
 }
 
 .email {
     display: inline-block;
-    grid-column: 11 / 13;
+    grid-column: 10 / 13;
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 60px;
+}
+
+
+/* PAGE - PROCESS */ 
+
+
+.process{
+    background-color: #AAA8A8;
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+
+}
+
+.process-square {
+    display: grid;
+    height: 650px;
+    grid-template-columns: repeat(12, 1fr);
+
+}
+
+.video {
+    display: grid;
+    grid-row: 2;
+    grid-column: 10;
+    border-radius: 10%;
+}
+
+.process-text{
+    display: grid;
+    grid-row: 2;
+    grid-column: 3/7;
+    margin-top: 15%;
+    text-align: center;
+    font-family: "Balthazar";
+    color: white;
+    font-size: 2em;
+    line-height: 1.3em;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid #2A2828;
+    
+}
+
+
+.process-benefit{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2/8;
+    margin-top: 65%;
+    text-align: center;
+    font-family: "Balthazar";
+    color: black;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 0.3em;
+    
+}
+
+
+.process-text-square {
+    height: 240px;
+
+    display: grid;
+    grid-column: 3/7;
+    grid-row: 2;
+    background-color: #2A2828;
+    z-index: -5;
+    margin-top: 5px;
+    border-radius: 5%;
 }
