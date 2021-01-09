@@ -11,9 +11,6 @@
 /* GLOBAL - Header + Nav Bar */
 
 
-
-
-
 header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -125,6 +122,22 @@ h1 {
 
 
 /* PAGE - SERVICES */ 
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s all ease-in-out;
+}
+
+.fade-in-appear {
+    opacity: 1;
+    transform: translateY(0px)
+}
+
+#fade-in.appear {
+    opacity: 1;
+    
+}
 
 .print-styles {
     width: 100%;
@@ -502,7 +515,7 @@ footer {
 .process-text{
     display: grid;
     grid-row: 2;
-    grid-column: 3/7;
+    grid-column: 2/8;
     margin-top: 15%;
     text-align: center;
     font-family: "Balthazar";
@@ -519,7 +532,7 @@ footer {
     display: grid;
     grid-row: 2;
     grid-column: 2/8;
-    margin-top: 65%;
+    margin-top: 45%;
     text-align: center;
     font-family: "Balthazar";
     color: black;
@@ -529,7 +542,7 @@ footer {
     
 }
 
-
+/*
 .process-text-square {
     height: 240px;
     display: grid;
@@ -538,9 +551,10 @@ footer {
     background-color: #2A2828;
     z-index: -5;
     margin-top: 5px;
-    border-radius: 5%;
+    border-radius: 50%;
+    
 }
-
+*/
 
 /* PAGE - ABOUT */
 
@@ -595,10 +609,10 @@ footer {
 
 .collections{
     display: grid;
-    grid-row: 3/4;
-    grid-column: 2/12;
+    grid-row: 2/4;
+    grid-column: 2/7;
     list-style: none;
-    margin-top: -120px;
+    margin-top: 50px;
     font-family: "Cormorant Garamond";
     line-height: 3em;
     padding-bottom: 50px;
@@ -624,10 +638,15 @@ footer {
     font-family: "Cormorant Garamond";
     line-height: 4em;
     margin-top: 150px;
-    margin-left: 50px;
+    margin-left: 20px;
     color: #000000;
     font-size: 1.2em;
 
+}
+.label {
+    font-family: "Cormorant";
+    font-size: 1.2em;
+   
 }
 
 .form-box {
@@ -652,16 +671,17 @@ input[type=text], textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    font-family: "Cormorant"
+    font-family: "Cormorant";
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #2A2828;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    justify-items: center;
+    justify-content: center;
+    margin-left: 45%;
 
 }
