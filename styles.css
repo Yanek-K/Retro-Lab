@@ -14,6 +14,9 @@
 header{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    background-color: rgba(12, 23, 23, 0.3);
+    padding-bottom: 15px;
+    margin-top: 10px;
 }
 
 
@@ -22,13 +25,13 @@ header{
     height: 30px;
     width: auto;
     grid-column: 2/4;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 nav {
     grid-column: 6 / 13;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     text-decoration: none;
   
 }
@@ -119,6 +122,88 @@ h1 {
 #chicago {
     border-radius: 40%
 }
+
+/* Footer */
+
+footer {
+    background-color: #161616;
+    height: 70px;
+    align-content: center;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row: 2;
+    margin-left: 10px;
+    margin-top: 15px
+}
+
+
+
+.facebook {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    grid-column: 1/2;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+
+.linkedin {
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    grid-column: 2/3;
+    margin-left: -20px;
+    margin-top: -5px;
+}
+
+.twitter{
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    grid-column: 3/4;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.contact {
+    display: inline-block;
+    grid-column: 10;
+    color: white;
+    text-decoration-style: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: -10px;
+    
+}
+
+
+.FAQ {
+    display: inline-block;
+    grid-column: 11;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 10px;
+}
+
+
+.terms {
+    display: inline-block;
+    grid-column: 12;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: -20px;
+}
+
+
+
 
 
 /* PAGE - SERVICES */ 
@@ -426,104 +511,51 @@ h1 {
     box-shadow: silver;
 }
 
-/* Footer */
-
-footer {
-    background-color: #2A2828;
-    height: 50px;
-    align-content: center;
-    display: grid;
-}
-
-
-.social {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    margin-left: 10px;
-}
-
-
-
-.facebook {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    grid-column: 1/2;
-    margin-left: 20px;
-}
-
-.linkedin {
-    display: inline-block;
-    height: 20px;
-    width: auto;
-    grid-column: 2/3;
-    margin-left: -30px;
-}
-
-.twitter{
-    display: inline-block;
-    height: 20px;
-    width: auto;
-    grid-column: 3/4;
-    margin-left: -20px;
-}
-
-.phone {
-    display: inline-block;
-    grid-column: 9 / 11;
-    color: white;
-    margin-left: -20px;
-}
-
-.email {
-    display: inline-block;
-    grid-column: 11 / 13;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-left: 0px;
-}
 
 
 /* PAGE - PROCESS */ 
 
 
 .process{
-    background-color: #AAA8A8;
-    height: 700px;
+
+    height: 730px;
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 
 }
 
 .process-square {
     display: grid;
-    height: 650px;
-    grid-template-columns: repeat(12, 1fr);
+    height: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1b1b1b;
+    padding-top: 30px;
 
 }
 
 .video {
     display: grid;
     grid-row: 2;
-    grid-column: 10;
-    border-radius: 10%;
+    grid-column: 2;
+    border-radius: 5%;
+    height: 400px;
+    width: 600px;
+    padding-top: 25px;
 }
 
 .process-text{
     display: grid;
-    grid-row: 2;
-    grid-column: 2/8;
-    margin-top: 15%;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 35px;
     text-align: center;
     font-family: "Balthazar";
     color: white;
     font-size: 2em;
     line-height: 1.3em;
     letter-spacing: 0.2em;
-    border-bottom: 1px solid #2A2828;
+
     
 }
 
@@ -531,14 +563,15 @@ footer {
 .process-benefit{
     display: grid;
     grid-row: 2;
-    grid-column: 2/8;
-    margin-top: 45%;
+    grid-column: 2;
+    margin-top: 77%;
     text-align: center;
     font-family: "Balthazar";
-    color: black;
+    color: rgb(207, 207, 207);
     font-size: 1em;
     line-height: 2em;
     letter-spacing: 0.3em;
+    margin-bottom: 30px;
     
 }
 
@@ -640,7 +673,7 @@ footer {
     margin-top: 150px;
     margin-left: 20px;
     color: #000000;
-    font-size: 1.2em;
+    font-size: 1em;
 
 }
 .label {
