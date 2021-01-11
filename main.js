@@ -1,4 +1,5 @@
 
+
 /* Smooth Scroll */ 
 
 $('.navbar a').on('click', function(e){
@@ -16,14 +17,8 @@ $('.navbar a').on('click', function(e){
 /* Fade */
 
 
-function scrollAppear () {
-    var fadeIn = document.querySelector('.fade-in');
-    var position = fadeIn.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight;
+AOS.init({
+    offset: 100,
+    duration: 2000
+});
 
-    if(position < screenPosition){
-        fadeIn.classList.add("fade-in-appear")
-    }
-}
-
-    window.addEventListener('scroll', scrollAppear);
